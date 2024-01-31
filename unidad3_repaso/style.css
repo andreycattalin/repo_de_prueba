@@ -1,0 +1,99 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 100px 0;
+    background-image: linear-gradient(to right, rgb(236, 72, 153), rgb(239, 68, 68), rgb(234, 179, 8));
+}
+
+.header h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.content {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.book-box {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.book-box img, .img-custom {
+    max-width: 200px;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.28);
+}
+
+.img-custom img {
+    width: 100%;
+}
+
+.book-info {
+    border: 4px solid transparent;
+    padding: 5px;
+    padding-left: 60px;
+}
+
+.book-info h2 {
+    font-size: 14px;
+}
+
+.book-info:hover {
+    border-color: black;
+}
+
+.price {
+    font-size: 42px;
+    padding: 8px;
+    background-color: blanchedalmond;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.price sup {
+    font-size: 20px;
+}
+
+.oculto {
+    display: none;
+}
+
+/* .book-box:hover .oculto {
+    display: block;
+} */
+
+@media (max-width: 700px) {
+    .book-box {
+        flex-direction: column;
+    }
+    .img-custom {
+        margin: auto;
+    }
+    .book-info h2 {
+        font-size: 20px;
+    }
+
+    #final {
+        display: none;
+    }
+}
+
+@media (max-width: 475px) {
+    #medio {
+        display: none;
+    }
+}
